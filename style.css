@@ -16,10 +16,11 @@ section {
 }
 .container {
     width: 90%;
-    max-width: 400px;
+    max-width: 800px;
     background-color: rgb(37, 55, 59);
-    border-radius: 8px;
+    border-radius: 2px;
     overflow:hidden;
+    
 }
 .display {
     background-color: rgb(182, 182, 182);
@@ -42,7 +43,7 @@ section {
     font-size: 20px;
     opacity: .4;
 }
-.all_butons {
+.all_buttons {
     color:whitesmoke;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
@@ -56,8 +57,11 @@ section {
     justify-content: center;
     align-items: center;
     font-size:30px;
-    cursor: crosshair;
+    cursor: pointer;
 }
 .button:hover {
     background-color: rgb(30, 43, 46);
+}
+.btn-0 {
+    grid-column: 1/3;
 }
