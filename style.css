@@ -17,7 +17,7 @@ section {
 .container {
     width: 90%;
     max-width: 800px;
-    background-color: rgb(37, 55, 59);
+    background-color: rgb(41, 42, 42);
     border-radius: 2px;
     overflow:hidden;
     
@@ -29,16 +29,17 @@ section {
     text-align: right;
     padding: 20px;
     font-size: 30px;
+    position: relative;
 }
 .display-1{
     opacity: .4;
     font-size: 20px;
-    overflow: hidden;
-    height: 20px;
+     height: 20px;
+   overflow: hidden;
 }
 .temp-result {
-    bottom:0;
     position: absolute;
+    bottom:0;
     left: 10;
     font-size: 20px;
     opacity: .4;
@@ -49,7 +50,7 @@ section {
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 }
 .button {
-    border: .5px solid rgba(92, 92, 92, 0.14);
+    border: .5px solid rgba(33, 33, 33, 0.812);
     display: inline-block;
     height: 100px;
     width:100%;
@@ -60,7 +61,7 @@ section {
     cursor: pointer;
 }
 .button:hover {
-    background-color: rgb(30, 43, 46);
+    background-color: rgb(50, 7, 7);
 }
 .btn-0 {
     grid-column: 1/3;
