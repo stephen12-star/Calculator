@@ -20,5 +20,8 @@ numbersE1.forEach (number => {
         } else if (e.target.innerText=== '.' && haveDot){
             return;
         }
+        dis2num += e.target.innerText;
+        display2E1 += e.target.innerText;
+        display2E1.innerText = dis2Num;
     })
 })
