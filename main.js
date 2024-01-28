@@ -49,3 +49,8 @@ function clearVar(name =''){
 tempResultE1.innerText = result; 
 }
 
+function mathOperation (){
+    for(lastOperation === '*'){
+        result = parseFloar(result) * parseFloat (dis2Num);
+    } else if ( lastOperation === )
+}
