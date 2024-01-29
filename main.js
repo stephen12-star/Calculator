@@ -4,7 +4,7 @@ const tempResultE1 = document.querySelector('.temp-result');
 const numbersE1 = document.querySelectorAll('.number');
 const operationE1 = document.querySelectorAll('.operation');
 const equalE1 = document.querySelector('.equal');
-const clearE1 = document.querySelector('.all-clear');
+const clearAllE1 = document.querySelector('.all-clear');
 const clearLastE1 = document.querySelector('.last-entity-clear');
 
 let dis1Num ='';
@@ -47,10 +47,38 @@ function clearVar(name =''){
  display2E1.innerText = '';
  dis2Num = '';
 tempResultE1.innerText = result; 
-}
+};
 
 function mathOperation (){
-    for(lastOperation === '*'){
-        result = parseFloar(result) * parseFloat (dis2Num);
-    } else if ( lastOperation === )
+    if(lastOperation === '*'){
+        result = parseFloat(result) * parseFloat (dis2Num);
+    }else if ( lastOperation === '+'){
+        result = parseFloat(result) + parseFloat (dis2Num);
+    }else if ( lastOperation === '-'){
+        result = parseFloat(result) - parseFloat (dis2Num);
+    }else if ( lastOperation === '/'){
+        result = parseFloat(result) / parseFloat (dis2Num);
+    }else if ( lastOperation === '%'){
+        result = parseFloat(result) % parseFloat (dis2Num);
+    }
 }
+
+equalE1.addEventListener('click', (e)=>{
+    if( !dis1Num|| !dis2Num ) return;
+    haveDot = false;
+    mathOperation();
+    clearVar();
+    display2E1.innerText = result;
+    tempResultE1.innerText = '';
+    dis2Num = result;
+    dis1Num = '';
+});
+
+clearAllE1.addEventListener('click', (e)=> {
+    display1E1.innerText = '0';
+    display2E1.innerText= '0';
+    dis2Num = '';
+    dis1Num = '';
+    result = '';
+    tempResultE1.innerText = '0';
+});
