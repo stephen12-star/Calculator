@@ -3,11 +3,12 @@
     margin:0;
     box-sizing: border-box;
 }
+
 html {
     font-family: 'Montserrat';
 }
 section {
-    background-color: black;
+    background-color: rgb(93, 80, 80);
     width:100%;
     min-height: 100vh;
     display: flex;
